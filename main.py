@@ -11,7 +11,7 @@ def main():
     previous_time = ''
     previous_progress_of_the_day = ''
 
-    with TelegramClient(config.session_name, config.api_id, config.api_hash) as client:
+    with TelegramClient(config.session_name, config.api_id, config.api_hash, system_version='4.16.30-vxCUSTOM') as client:
         while True:
             if not previous_time == get_current_time():
                 current_time = get_current_time()
